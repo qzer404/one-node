@@ -4,48 +4,32 @@
   },
   "inbounds": [
     {
-      "listen": null,
-      "port": 8080,
+      "port": 10008,
       "protocol": "vless",
       "settings": {
-        "decryption": "none",
         "clients": [
           {
-            "email": "idx-xhttp",
-            "flow": "",
-            "id": "0fd81780-09c1-46b9-8536-9267dc5989e1"
+            "id": "YOUR_UUID",
+            "flow": "none",
+            "email": "lunes-reality"
           }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "xhttpSettings": {
-          "host": "",
-          "mode": "auto",
-          "path": "/"
-        }
-      }
-    },
-    {
-      "listen": null,
-      "port": 8090,
-      "protocol": "vless",
-      "settings": {
-        "decryption": "none",
-        "clients": [
-          {
-            "email": "idx-ws",
-            "flow": "",
-            "id": "0fd81780-09c1-46b9-8536-9267dc5989e1"
-          }
-        ]
+        ],
+        "decryption": "none"
       },
       "streamSettings": {
         "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "host": "",
-          "path": "/"
+        "security": "reality",
+        "realitySettings": {
+          "show": false,
+          "dest": "node22.lunes.host:443",
+          "xver": 0,
+          "serverNames": [
+            "node22.lunes.host"
+          ],
+          "privateKey": "YOUR_PRIVATE_KEY",
+          "shortIds": [
+            "YOUR_SHORT_ID"
+          ]
         }
       }
     }
